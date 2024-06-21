@@ -1,0 +1,12 @@
+vpc_cidr_block  = "10.0.0.0/16"
+vpc_name = "vpc-mod"
+subnet_cidr_block = "10.0.0.0/22"
+subnet_az = "us-west-1a"
+public_ip = true
+subnet_name = "public-subnet"
+igw_name = "igw-mod"
+ports = [22, 0]
+ami_id = "ami-0ca1f30768d0cf0e1"
+instance_name = "EC2-Module"
+instance_type = "t2.micro"
+key_name = "rohit-key"
