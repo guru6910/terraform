@@ -1,13 +1,14 @@
 terraform {
   backend "s3" {
-  bucket = "guru-12345678"
-  key = "terraform.tfstate"
-  region = "us-west-1"
-  profile = "guru"
-  dynamodb_table = "terraform"
-  encrypt = true
-
+    bucket         = "guru-12345678"       # S3 bucket to store Terraform state
+    key            = "terraform.tfstate"   # Path to the state file in the bucket
+    region         = "us-west-1"           # AWS region where the S3 bucket is located
+    profile        = "guru"                # AWS CLI profile for authentication
+    dynamodb_table = "terraform"           # DynamoDB table for state locking
+    encrypt        = true                  # Encrypts the state file at rest
   }
+}
+
 }
 
 resource "aws_instance" "test" {
