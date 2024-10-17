@@ -1,0 +1,13 @@
+vpc_cidr_block = "10.0.0.0/16"
+vpc_tag = "my_vpc"
+subnet_cidr_block = [ "10.0.1.0/24", "10.0.20.0/24", "10.0.30.0/24" ]
+subnet_az = [ "us-east-2a", "us-east-2b", "us-east-2c" ]
+map_public_ip_on_launch = [ true, false ]
+subnet_name = [ "public subnet", "pri-1 subnet", "pri-2 subnet" ]
+igw_name = "my_internet_gateway"
+sg_name = "my_sg"
+ports = [ 22, 80, 8080, 3306, 0 ]
+private_ip = [ "10.0.1.100/24", "10.0.20.100/24", "10.0.30.100/24" ]
+ami_id = [ "ami-050cd642fd83388e4" ]
+instance_type = [ "t2.micro", "t2.medium", "t3.micro" ]
+key_name = [ "current" ]
