@@ -53,6 +53,10 @@ terraform apply
 ````
 terraform apply -auto-approve
 ````
+**To delete specific resource from remote**
+````
+terraform destroy -target=aws_instance.myec2
+````
 **to add provider**
 ````
 provider "aws" {
