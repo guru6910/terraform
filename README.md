@@ -57,6 +57,10 @@ terraform apply -auto-approve
 ````
 terraform destroy -target=aws_instance.myec2
 ````
+**Recreation of resource**
+````
+terraform taint aws_instance.myec2
+````
 **to add provider**
 ````
 provider "aws" {
